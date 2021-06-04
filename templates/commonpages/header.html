@@ -1,0 +1,85 @@
+{% block content %}
+<section class="header">
+  <nav>
+    <div class="logo">
+      <a href="{{url_for('index_page')}}"><img src="{{url_for('static',filename='assets/images/logo.png')}}"
+          alt="img"></a>
+      <span class="logo-text">You Advertise Me</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <i class="fas fa-times" onclick="hideMenu()"></i>
+      <div class="singaporeLogo-mobile">
+        <ul class="nav">
+          <li><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="{{url_for('index_page')}}"><img
+                src="{{url_for('static',filename='assets/images/sglogo.png')}}" alt="Logo" class="logo2">
+              <span class="logo-text2">Singapore</span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="navbar-brand" href="{{url_for('index_page1')}}">
+                <img src="{{url_for('static',filename='assets/images/cambodia.png')}}" alt="Logo" class="logo2">
+                <span class="logo-text2">Cambodia</span>
+              </a>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li><a href="{{url_for('index_page')}}">Home</a></li>
+        <li><a href="{{url_for('brand_business')}}">Brand & Businesses</a></li>
+        <li><a href="{{url_for('consumer')}}">Consumers</a></li>
+        <li><a href="{{url_for('social_impact')}}">Social Impact</a></li>
+
+
+        <li><a href="{{url_for('blog')}}">Blog</a></li>
+        <li class="desktop-dropdown "><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{url_for('news')}}">News</a>
+            <a class="dropdown-item" href="{{url_for('news')}}">Contact</a>
+          </div>
+        </li>
+        <li class="mobile-dropdown"><a href="{{url_for('news')}}">News</a></li>
+        <li class="mobile-dropdown"><a href="{{url_for('news_page')}}">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="social-link">
+      <div class="label-media-logo">
+        <ul>
+          <li class="media-logo">
+            <a href="https://www.facebook.com/YouAdMeKH/" target="_blank"><i class="fab fa-facebook link"></i></a>
+          </li>
+          <li class="media-logo">
+            <a href="https://www.instagram.com/youadmekh/" target="_blank">
+              <i class="fab fa-instagram link"></i></a>
+          </li>
+          <li class="media-logo">
+            <a href="https://www.youtube.com/channel/UC-L7MxR-3FYukxckFqw-6bQ" target="_blank">
+              <i class="fab fa-youtube link"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="singaporeLogo ">
+      <ul>
+        <li><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" href="{{url_for('index_page')}}"><img
+              src="{{url_for('static',filename='assets/images/sglogo.png')}}" alt="Logo" class="logo2">
+            <span class="logo-text2">Singapore</span></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="navbar-brand" href="{{url_for('index_page1')}}">
+              <img src="{{url_for('static',filename='assets/images/cambodia.png')}}" alt="Logo" class="logo2">
+              <span class="logo-text2">Cambodia</span>
+            </a>
+
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+  </nav>
+</section>
+{% endblock %}

@@ -1,0 +1,247 @@
+<html lang="en">
+<?php $consumer = 'active' ?>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUADME | HOME</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.min.css')}}">
+  <!-- fontawesome css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/fontawesome/css/all.min.css')}}">
+
+  <!-- stylesheet css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='assets/images/favicon.png')}}">
+</head>
+
+<body>
+  <!-------------Header ---------------------->
+  {% include "./commonpages/header.html" %}
+  <!-------------Header End ---------------------->
+
+  <!-------------Share the good section---------------------->
+  <div class="container shareGood desktopview">
+    <div class="row shareGoodRow">
+      <div class="col-lg-6">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/consumer1.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="title">Share The Good,
+          Good To Share</h1>
+        <p class="text">Share and recommend good products / services from your
+          favourite brands to your network of friends and get instant
+          cash and rewards. The more you share the more you receive.</p>
+        <h1 class="content">Coming Soon!</h1>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+        </a>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container shareGood mobileview">
+    <div class="row shareGoodRow">
+      <div class="col-lg-12">
+        <h1 class="title">Share The Good,
+          Good To Share</h1>
+      </div>
+      <div class="col-lg-12">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/consumer1.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-12 ">
+        <p class="text">Share and recommend good products / services from your
+          favourite brands to your network of friends and get instant
+          cash and rewards. The more you share the more you receive.</p>
+        <h1 class="content">Coming Soon!</h1>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+        </a>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-------------Share the good section end ---------------------->
+
+  <!-------------Product section ---------------------->
+  <div class="container  mt-5 desktopview">
+    <div class="row product">
+
+      <div class="col-lg-6">
+        <h1 class="title">Review Fantastic Products And Services With Big Discounts Or Even For Free</h1>
+        <p class="text">We reward you for your kindness! In exchange for your reviews,
+          you get discounts for products or services.
+          Take advantage of being a creator and enjoy exclusive YouAdMe’s deals!</p>
+        <h1 class="content">Coming Soon!</h1>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+        </a>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/consumer2.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container  mt-5 mobileview">
+    <div class="row product">
+      <div class="col-lg-12">
+
+        <h1 class="title">Review Fantastic Products And Services With Big Discounts Or Even For Free</h1>
+      </div>
+      <div class="col-lg-12">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/consumer2.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <p class="text">We reward you for your kindness! In exchange for your reviews,
+          you get discounts for products or services.
+          Take advantage of being a creator and enjoy exclusive YouAdMe’s deals!</p>
+        <h1 class="content">Coming Soon!</h1>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+        </a>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-------------Product section ---------------------->
+
+  <!-------------Everything in app section---------------------->
+  <div class="container  mt-5 desktopview">
+    <div class="row everything">
+      <div class="col-lg-6">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/consumer3.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="title">Everything In Just One App</h1>
+        <p class="text">As your favorite brand get the opportunity to publish campaigns, you get the chance to join any
+          of your interests! Check the requirements, post your participated campaigns on your social media - Instagram,
+          Facebook, Snapchat or even Twitter, and then get paid. All within the YouAdMe app, easy peasy!</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="container  mt-5 mobileview">
+    <div class="row everything">
+      <div class="col-lg-12">
+        <h1 class="title">Everything In Just One App</h1>
+      </div>
+      <div class="col-lg-12">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/consumer3.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <p class="text">As your favorite brand get the opportunity to publish campaigns, you get the chance to join any
+          of your interests! Check the requirements, post your participated campaigns on your social media - Instagram,
+          Facebook, Snapchat or even Twitter, and then get paid. All within the YouAdMe app, easy peasy!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-------------Everything in app section end ---------------------->
+
+  <!-------------earning section end ---------------------->
+  <div class="container earning mt-5">
+    <h1 class="title">Four Simple Steps To Start Earning <br>
+      From Your Loyalty Reviews</h1>
+    <div class="row m-5">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <h1 class="title2">Download</h1>
+        <img src="{{url_for('static',filename='assets/images/download.png')}}" alt="" width="20%">
+        <p class="content">YouAdMe is available
+          on Apple App Store
+          and Google Play</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <h1 class="title2">Register</h1>
+        <img src="{{url_for('static',filename='assets/images/register.png')}}" alt="" width="20%">
+        <p class="content">Fill in basic informations and connect YouAdMe to your social media accounts</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <h1 class="title2">Participate</h1>
+        <img src="{{url_for('static',filename='assets/images/participate.png')}}" alt="" width="20%">
+        <p class="content mt-4">Pick your favourite brands, execute the task and submit your reviews</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <h1 class="title2">Earn</h1>
+        <img src="{{url_for('static',filename='assets/images/earn.png')}}" alt="" width="20%">
+        <p class="content">Claim your rewards from your reviews</p>
+      </div>
+    </div>
+  </div>
+  <!-------------earning section end ---------------------->
+
+  <!-------------app link section  ---------------------->
+  <div class="container-fluid work-section mt-5 mobileview">
+    <h1 class="title">You know what to do <br>
+      now! It all start here.</h1>
+    <h1 class="content">Download Now</h1>
+    <a href="#">
+      <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="10%">
+    </a>
+    <a href="#">
+      <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="10%">
+    </a>
+  </div>
+  <!-------------app link section end ---------------------->
+  <!-------------video section  ---------------------->
+  <div class="container-fluid work-section mt-5">
+    <div class="video">
+      <iframe class="w-100" height="700" src="https://www.youtube.com/embed/wIgEo4RhzIU" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""></iframe>
+    </div>
+  </div>
+  <!-------------video section end ---------------------->
+
+  <!-------------app link section  ---------------------->
+  <div class="container-fluid work-section mt-5 desktopview">
+    <h1 class="title">You know what to do <br>
+      now! It all start here.</h1>
+    <h1 class="content">Download Now</h1>
+    <a href="#">
+      <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="10%">
+    </a>
+    <a href="#">
+      <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="10%">
+    </a>
+  </div>
+  <!-------------app link section end ---------------------->
+
+  <!-------------Footer---------------------->
+  {% include "./commonpages/footer.html" %}
+  <!-------------Footer End ---------------------->
+  <!--jquery js  -->
+  <script src="{{url_for('static',filename='assets/js/jquery-3.5.1.min.js')}}"></script>
+  <!-- bootstrap js -->
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.bundle.js')}}"></script>
+
+  <!-- main js -->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+</body>
+
+</html>

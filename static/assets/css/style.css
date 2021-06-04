@@ -1,0 +1,816 @@
+@font-face {
+	font-family: "PoppinsSemiBold";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+	font-family: "AvenirLight";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Avenir-Light.ttf) format("truetype");
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "AvenirLight";
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 900px) {
+	h1,
+	p,
+	.button {
+		text-align: center;
+	}
+}
+/*********************** header styling *********************************/
+ul {
+	margin-bottom: 0;
+}
+.fas {
+	color: #000;
+}
+.header {
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	z-index: 10000;
+}
+nav {
+	display: flex;
+	padding: 2% 2%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffd100;
+	height: 90px;
+	flex-direction: row;
+	border-bottom: 1px black;
+	box-shadow: 0px 0px 5px 0px;
+}
+nav img {
+	width: 66px;
+	padding: 2px 0px;
+}
+.nav-links {
+	flex: 1;
+	text-align: center;
+}
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 10px;
+	position: relative;
+}
+.nav-links ul li a {
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+}
+.nav-links ul li a:hover {
+	color: #fff;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+nav .fas {
+	display: none;
+}
+.logo-text {
+	font-size: 25px;
+	color: #000000;
+	font-family: "PoppinsSemiBold";
+}
+a {
+	text-decoration: none;
+	background-color: transparent;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+nav .label-media-logo {
+	margin-right: 20px;
+}
+
+nav .label-media-logo ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 20px;
+	padding: 5px;
+}
+
+nav .logo2 {
+	width: 32px;
+}
+.social-link {
+	display: flex;
+	text-align: right;
+}
+.singaporeLogo-mobile {
+	display: none;
+}
+.dropdown-item:hover {
+	color: #ffd100 !important ;
+}
+.singaporeLogo ul,.singaporeLogo-mobile ul{
+  list-style: none;
+}
+.singaporeLogo span:hover,.singaporeLogo-mobile span:hover{
+  border-bottom: 1px solid black;
+}
+.nav-links .mobile-dropdown{
+  display: none;
+}
+.nav-links ul li a.active{
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+	.text-box h1 {
+		font-size: 25px;
+	}
+	.nav-links ul li {
+		display: block;
+	}
+	.nav-links {
+		position: absolute;
+		background: #fff;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fas {
+		display: block;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+		order: 3;
+	}
+	nav .logo-text {
+		display: none;
+	}
+	nav .singaporeLogo {
+		display: none;
+	}
+	nav .social-link {
+		float: left;
+	}
+	nav .logo {
+		text-align: center;
+		order: 2;
+	}
+	.singaporeLogo-mobile {
+		display: block;
+		padding: 20px;
+	}
+  .nav-links ul li a:hover {
+    color: #000;
+  }
+  .nav-links .mobile-dropdown{
+    display: block;
+  }
+  .nav-links .desktop-dropdown{
+    display: none;
+  }
+  .nav-links ul li a {
+    border-top: 1px solid #eee;
+    position: relative;
+    display: block;
+    padding: 10px 15px
+  }
+  
+}
+@media (max-width: 1174px) {
+	.text-box h1 {
+		font-size: 25px;
+	}
+	.nav-links ul li {
+		display: block;
+	}
+	.nav-links {
+		position: absolute;
+		background: #fff;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fas {
+		display: block;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+		order: 3;
+	}
+	nav .logo-text {
+		display: none;
+	}
+	nav .singaporeLogo {
+		display: none;
+	}
+	nav .social-link {
+		float: left;
+	}
+	nav .logo {
+		text-align: center;
+		order: 2;
+	}
+	.singaporeLogo-mobile {
+		display: block;
+		padding: 20px;
+	}
+  .nav-links ul li a:hover {
+    color: #000;
+  }
+  .nav-links .mobile-dropdown{
+    display: block;
+  }
+  .nav-links .desktop-dropdown{
+    display: none;
+  }
+}
+/* -----------------privacy and term ----------------------------- */
+.main-container {
+	padding-top: 120px;
+}
+.main-container h4 {
+	font-family: "AvenirLight";
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+.main-container h6 {
+	font-family: "AvenirLight";
+	font-size: 18px;
+	font-weight: bold;
+}
+.main-container p,
+li {
+	font-size: 18px;
+}
+.page-title {
+	text-align: center;
+	color: #000000;
+	font-size: 45px;
+	font-weight: bold;
+	font-weight: 700;
+	margin-bottom: 60px;
+	font-family: "PoppinsSemiBold";
+}
+.office-adress {
+	height: auto;
+	width: 47%;
+	background-color: #d0ddef;
+	margin-bottom: 80px;
+	font-size: 18px;
+}
+.office-adress a:focus,
+.office-adress a:hover {
+	color: #23527c;
+	text-decoration: underline;
+}
+.office-adress a {
+	text-decoration: underline;
+	color: cornflowerblue;
+}
+@media (max-width: 900px) {
+	.office-adress {
+		width: 100%;
+	}
+	.country {
+		float: left;
+	}
+}
+
+/*--------------blog-details--------------------------*/
+
+.blog-contain p {
+	padding-bottom: 25px;
+}
+.blog-contain li {
+	padding-bottom: 10px;
+}
+.detailsbanner-image {
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+}
+.detailsbanner-image img {
+	background: rgba(0, 0, 0, 0.3);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.details-title {
+	width: 80%;
+	margin: auto 10%;
+	font-family: Roboto;
+}
+.blog-contain a:focus,
+.blog-contain a:hover {
+	color: #23527c;
+	text-decoration: underline;
+}
+.blog-contain a {
+	color: cornflowerblue;
+}
+.blog-publish-date {
+	margin-left: 10%;
+	padding-bottom: 35px;
+}
+.blog-publish-date img {
+	height: 25px;
+	width: 25px;
+}
+.blog-publish-date p {
+	display: inline;
+	font-size: 12px;
+	font-family: "Roboto";
+}
+.blog-contain p li {
+	font-family: "AvenirLight";
+}
+
+@media (max-width: 900px) {
+	.mobileview .details-title {
+		padding-top: 110px;
+	}
+	.mobileview .details-title h1 {
+		font-size: 20px;
+		text-align: -webkit-center;
+	}
+	.mobileview .detailsbanner-image {
+		margin-top: -45px;
+	}
+	.blog-publish-date {
+		margin-top: -35px;
+	}
+	.blog-contain p {
+		text-align: center;
+		font-size: 12px;
+	}
+	.blog-contain li {
+		font-size: 12px;
+	}
+}
+/*********************** footer styling ***************************/
+.footer {
+	padding: 20px;
+	padding-top: 100px;
+}
+.footer-col {
+	display: flex;
+	justify-content: center;
+}
+.footer-col input,
+.footer-col textarea {
+	width: 100%;
+	border: 2px #373b4d solid;
+	padding: 6px;
+	padding-left: 12px;
+	font-size: 15px;
+}
+.footer-col .submit {
+	width: 100%;
+	background-color: #373b4d;
+	color: #ffffff !important;
+	text-align: center;
+	cursor: pointer;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.footer-col .submit:hover {
+	background-color: #000000;
+}
+.footer .title {
+	font-size: 30px;
+	margin-bottom: 5%;
+	line-height: 45px;
+	font-family: "PoppinsSemiBold";
+}
+.logo-footer {
+	background-color: #000000;
+	color: #ffffff;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.logo-footer:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.text {
+	font-size: 17px;
+	margin-top: 10%;
+	text-align: left;
+}
+.subscribe-form {
+	padding-top: 128px;
+}
+/************************* main section styling ********************/
+
+.main-section {
+	height: auto;
+	background-color: #f4f4f4;
+	padding-top: 100px;
+}
+.title {
+	font-size: 40px;
+	font-family: "PoppinsSemiBold";
+}
+.main-section p {
+	font-size: 18px;
+	color: #000000;
+}
+.btn {
+	box-shadow: 0px 0px 0px 3px #000000;
+	display: inline-block;
+	border-radius: 0;
+	cursor: pointer;
+	color: #000000;
+	font-size: 13px;
+	padding: 7px 30px;
+	text-decoration: none;
+	text-shadow: 0px 0px 0px #000000;
+}
+.btn:hover {
+	background-color: #000000;
+	color: #fff;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 1.8em;
+	margin: 3% 0;
+}
+@media (max-width: 900px) {
+	.story-section iframe {
+		height: 250px;
+	}
+}
+/************************* rating section styling ********************/
+.rating-section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.rating-section .text {
+	font-size: 17px;
+	color: #000000;
+	padding: 43px;
+	margin-left: -10%;
+}
+@media (max-width: 900px) {
+	.title {
+		font-size: 25px;
+	}
+	.rating-section .text {
+		margin-left: 0;
+	}
+}
+.rating {
+	align-items: center;
+}
+
+.mobileview  .list li{
+  font-size: 22px;
+}
+/************************* app section styling ********************/
+.app-section {
+	text-align: center;
+}
+.img-bottom-border {
+	background-color: #fdde5f;
+	height: 20px;
+	width: 100%;
+	box-shadow: 5px 10px #dbba3b;
+}
+.img-top {
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+	padding: 0px 5%;
+}
+.img-top img {
+	margin-bottom: -10%;
+}
+/************************* achivement section styling ********************/
+.achivement-section {
+	text-align: center;
+}
+.achivement-section img {
+	margin-bottom: 10px;
+}
+.achivement-section .text {
+	font-size: 17px;
+	color: #fcd63f;
+	font-weight: bolder;
+	font-family: "PoppinsSemiBold";
+	margin: 0% auto 0% auto;
+	width: 80%;
+}
+@media (max-width: 900px) {
+	.achivement-section .text {
+		font-size: 15px;
+		margin: 0% auto 15% auto;
+	}
+	.achivement-section .col-xs-6,
+	.achivement-section .col-sm-6 {
+		width: 50%;
+	}
+}
+/************************* business page styling ********************/
+.business-section {
+	padding-top: 120px;
+	text-align: center;
+}
+.content {
+	font-size: 23px;
+	font-weight: bold;
+	margin-top: 3%;
+}
+
+.whyUs-section .title,
+.earning {
+	text-align: center;
+}
+
+.global-brand,
+.shareGoodRow,
+.product,
+.everything,
+.advertiseRow {
+	display: flex;
+	align-items: center;
+}
+
+.work-section,
+.seen-section,
+.traditional-section,
+.traditional-section p,
+.Partnering-section,
+.Partnering-section p {
+	text-align: center;
+}
+
+.brand-logos {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 900px) {
+	.video iframe {
+		width: 100%;
+		height: auto;
+	}
+	.brand-logos img {
+		width: 50%;
+		padding-top: 20px;
+	}
+}
+/************************* Consumer page styling ********************/
+.shareGood {
+	padding-top: 120px;
+}
+.mobileview {
+	display: none;
+}
+.earning .title2 {
+	text-align: center;
+	font-size: 20px;
+	color: #000000;
+	font-family: "PoppinsSemiBold";
+}
+.earning .content {
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+}
+.mobileview img {
+	width: 35%;
+}
+@media (max-width: 900px) {
+	.mobileview {
+		display: block;
+		align-items: center;
+	}
+
+	.desktopview {
+		display: none;
+	}
+}
+
+/************************* Blog page styling ********************/
+.blog-section {
+	width: 100%;
+	height: 750px;
+	background-color: #ffd12a;
+}
+.blog-section h1 {
+	padding-top: 350px;
+	text-align: center;
+	font-family: "PoppinsSemiBold";
+	color: #000000;
+}
+/************************* Social Impact page styling ********************/
+.advertise {
+	padding-top: 120px;
+}
+.advertise .text {
+	font-size: 26px;
+	color: #000000;
+	margin-top: 5%;
+}
+.text-section {
+	width: 100%;
+	height: 350px;
+	background-color: #f4f4f4;
+}
+@media (max-width: 900px) {
+	.text-section {
+		width: 100%;
+		height: auto;
+		background-color: #f4f4f4;
+		text-align: center;
+	}
+}
+
+.text-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 50px;
+}
+.text-section .text_background {
+	border: 7px solid #fcd63f;
+	background-color: #fcd63f;
+	box-shadow: 5px 6px #dbba3b;
+	font-size: 35px;
+	line-height: 70px;
+}
+.text-section p {
+	text-align: center;
+}
+
+.yellow-logos .text {
+	font-size: 17px;
+	line-height: 1;
+	margin: 10px 0 0 0;
+	color: #000000;
+}
+.yellow-logos .title {
+	font-size: 28px;
+}
+.yellow-logo-text {
+	padding-right: 100px;
+	padding-top: 20px;
+}
+
+@media (max-width: 900px) {
+	.yellow-logo-img img {
+		width: 50% !important;
+	}
+	.yellow-logo-text {
+		padding-right: 10px;
+		padding-top: 20px;
+	}
+}
+
+.Partnering-section .yellow-logos .text {
+	font-size: 17px;
+	line-height: 1;
+	margin: 10px 0 0 0;
+	color: #000000;
+}
+.Partnering-section .yellow-logos .title {
+	font-size: 28px;
+}
+.Partnering-section .yellow-logo-text {
+	padding-left: 0px !important;
+	padding-top: 20px;
+	padding-right: 0 !important;
+}
+
+@media (max-width: 900px) {
+	.Partnering-section .yellow-logo-img img {
+		width: 50% !important;
+	}
+	.Partnering-section .yellow-logo-text {
+		padding-right: 10px;
+		padding-top: 20px;
+	}
+}
+
+.advertiseForm {
+	text-align: center;
+	background-color: #ffd12a;
+	height: 100%;
+}
+.advertiseForm input,
+.advertiseForm textarea {
+	border: none;
+	width: 100%;
+	padding: 6px;
+	padding-left: 12px;
+	font-size: 15px;
+	font-family: "AvenirLight";
+}
+
+.input_submit {
+	width: 50%;
+	background-color: #373b4d;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 1%;
+}
+.social-media-logo {
+	color: #000000;
+	width: 35px;
+	height: 66px;
+	display: inline-block;
+	padding: 10.5px;
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+/************************* News page styling ********************/
+.news-section {
+	padding-top: 120px;
+}
+.news-section h1 {
+	text-align: center;
+}
+.newsContent {
+	margin-top: 0px;
+	padding: 25px 25px;
+	background-color: rgba(109, 118, 128, 0.07);
+}
+
+.etc {
+	position: absolute;
+	top: 5px;
+	background-color: #ffffff;
+	padding: 5px;
+	left: 20px;
+	color: #000;
+}
+.newsContent .title {
+	font-size: 16px;
+	color: #222;
+	padding-top: 2px;
+	font-family: none;
+}
+.newsContent .title a:hover {
+	color: #ffc539;
+}
+.newsContent .text {
+	font-size: 14px;
+}
+
+.link a:hover {
+	text-decoration: none;
+	color: #3a3838;
+	border-bottom: 2px solid #ffc539;
+}
+.panel-footer {
+	padding: 10px 15px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.page-link {
+	color: #000000;
+}
+.page-link:hover {
+	color: #000000;
+}
+
+/***************Cambodia styling***************/
+
+.retailers{
+text-align: center;
+}

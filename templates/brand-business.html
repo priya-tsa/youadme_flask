@@ -1,0 +1,206 @@
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUADME | HOME</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.min.css')}}">
+  <!-- fontawesome css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/fontawesome/css/all.min.css')}}">
+
+  <!-- stylesheet css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='assets/images/favicon.png')}}">
+</head>
+
+<body>
+  <!-------------Header ---------------------->
+  {% include './commonpages/header.html' %}
+  <!-------------Header End ---------------------->
+
+  <!-------------Business  Section ---------------------->
+  <div class="container business-section">
+    <h1 class="title">The only social e-commerce </h1>
+    <h1 class="title">platform business ever need</h1>
+    <p class="content">Trusted by Asia's largest brands</p>
+    <div class="button mt-3">
+      <a href="#contact" class="btn">Register Demo</a>
+    </div>
+    <div class="image">
+      <img src="{{url_for('static',filename='assets/images/business.png')}}" alt="" class="w-100">
+    </div>
+  </div>
+  <!-------------Business  Section End---------------------->
+
+
+  <!-------------WhyUs  Section ---------------------->
+  <div class="container whyUs-section mt-5 desktopview">
+    <h1 class="title">Why Us?</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="title">End-to-end social e-commerce solution</h1>
+        <p class="content">Asia's largest verified solutions for business growth</p>
+        <p class="text">As no better story has been told than one from an actual event,
+          reviews from consumers who have experience with your products and services
+          are the most powerful advertising tool for your business. YouAdMe,
+          Asia’s largest verified solutions for business growth is the platform
+          you need to gain customers’ trust and encourage consumers to business
+          interaction that will ultimately impact your business positively.</p>
+      </div>
+      <div class="col-lg-6">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/business2.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container whyUs-section mt-5 mobileview">
+    <h1 class="title">Why Us?</h1>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="content">Asia's largest verified solutions for business growth</p>
+      </div>
+      <div class="col-lg-12">
+        <div class="image-container">
+          <img src="{{url_for('static',filename='assets/images/business2.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <h1 class="title">End-to-end social e-commerce solution</h1>
+
+        <p class="text">As no better story has been told than one from an actual event,
+          reviews from consumers who have experience with your products and services
+          are the most powerful advertising tool for your business. YouAdMe,
+          Asia’s largest verified solutions for business growth is the platform
+          you need to gain customers’ trust and encourage consumers to business
+          interaction that will ultimately impact your business positively.</p>
+      </div>
+
+    </div>
+  </div>
+  <!-------------WhyUs  Section End---------------------->
+
+
+  <!-------------Global Brand  Section ---------------------->
+  <div class="container  mt-5">
+    <div class="row global-brand">
+      <div class="col-lg-6">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/global-brands.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-6 brand-details">
+        <h1 class="title">Global brands’ best friend.</h1>
+        <p class="text">YouAdMe has been utilized by the world's largest brands
+          and has been guaranteed to deliver the highest quality and value.
+          It’s time your business
+          flourishes as these global brands have been with YouAdMe.</p>
+      </div>
+    </div>
+  </div>
+  <!-------------Global Brand  Section End---------------------->
+
+
+  <!-------------Work Section ---------------------->
+  <div class="container-fluid work-section mt-5">
+    <h1 class="title">How It Works?</h1>
+    <div class="video">
+      <iframe class="w-100" height="600" src="https://www.youtube.com/embed/vq69xqt3Zoo" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  <!-------------Work  Section End---------------------->
+
+  <!-------------Seen  Section ---------------------->
+
+  <div class="container mt-5 seen-section">
+    <h1 class="title">As Seen On!</h1>
+
+    <div class="row brand-logos">
+      <div class="col-lg-2">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s1.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s2.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s3.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s4.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s5.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+    <div class="row brand-logos px-5">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s6.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s7.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s8.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    <div class="row brand-logos px-5">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-3">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s9.png')}}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s10.pn')}}g" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div>
+          <img src="{{url_for('static',filename='assets/images/s11.pn')}}g" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+
+  </div>
+  <!-------------Seen  Section End---------------------->
+
+
+  <!-------------Footer---------------------->
+  {% include './commonpages/footer.html' %}
+  <!-------------Footer End ---------------------->
+  <!--jquery js  -->
+  <script src="{{url_for('static',filename='assets/js/jquery-3.5.1.min.js')}}"></script>
+  <!-- bootstrap js -->
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.bundle.js')}}"></script>
+
+  <!-- main js -->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+</body>
+
+</html>

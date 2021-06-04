@@ -1,0 +1,40 @@
+<html lang="en">
+<?php $blog = 'active' ?>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUADME | HOME</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.min.css')}}">
+  <!-- fontawesome css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/fontawesome/css/all.min.css')}}">
+
+  <!-- stylesheet css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='assets/images/favicon.png')}}">
+</head>
+
+<body>
+  <!-------------Header ---------------------->
+  {% include "./commonpages/header.html" %}
+  <!-------------Header End ---------------------->
+
+  <div class="container-fluid blog-section">
+    <h1>Coming Soon!</h1>
+  </div>
+
+  <!-------------Footer---------------------->
+  {% include "./commonpages/footer.html" %}
+  <!-------------Footer End ---------------------->
+  <!--jquery js  -->
+  <script src="{{url_for('static',filename='assets/js/jquery-3.5.1.min.js')}}"></script>
+  <!-- bootstrap js -->
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.bundle.js')}}"></script>
+
+  <!-- main js -->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+</body>
+
+</html>

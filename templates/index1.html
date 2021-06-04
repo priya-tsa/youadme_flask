@@ -1,0 +1,265 @@
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUADME | Cambodia</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.min.css')}}">
+  <!-- fontawesome css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/vendor/fontawesome/css/all.min.css')}}">
+
+  <!-- stylesheet css-->
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='assets/images/favicon.png')}}">
+</head>
+
+<body>
+  <!-------------Header ---------------------->
+  {% include "./commonpages/header.html" %}
+  <!-------------Header End ---------------------->
+
+  <!-------------Main Section---------------------->
+  <div class="container-fluid main-section">
+    <div class="row">
+
+      <div class="col-lg-6 order-lg-2">
+        <div style="padding:9%;">
+          <h1 class="title">
+            Reshaping Businesses
+            Into A True Consumer
+            - First Perspective
+          </h1>
+          <p class="mt-5">
+            កម្មវិធីផ្សព្វផ្សាយទីផ្សារតាមទូរស័ព្ទដៃឈ្នះជ័យលាភី #1 នៅកម្ពុជា
+          </p>
+          <div class="pt-5">
+            <a href="#">
+              <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+            </a>
+            <a href="#">
+              <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="{{url_for('static',filename='assets/kh-images/index1.png')}}" alt="" class="w-100">
+      </div>
+
+    </div>
+  </div>
+
+  <!-------------Main Section End---------------------->
+
+  <!-------------Story Section---------------------->
+  <div class="container story-section">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 p-5">
+        <iframe width="120%" height="550px"
+          src="https://www.youtube.com/embed/fpYlgkZL4cI?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fbernardteo.wixsite.com&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=1"
+          style="margin-left: -10%;"></iframe>
+      </div>
+      <div class="col-lg-6 col-md-12 pt-5 pl-5">
+        <h1 class="title">We Bring a True Organic Way Of Spreading Good Word For
+          Every Great Business.</h1>
+        <p class="text">YouAdMe, derives from the word You Advertise Me. "You" as
+          the consumer and "Me" as the brand owner. It was started in because we wanted
+          to allow business owners, advertisers and marketers to better understand their
+          consumer and, more importantly, drive consumer engagement with word-of-mouth
+          marketing effects where consumer advocates can spread reviews for
+          the brand they love to their own social networks and circles.</p>
+        <div class="">
+          <a href="#">
+            <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+          </a>
+          <a href="#">
+            <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------Story Section End---------------------->
+
+
+
+  <!-------------Rating Section ---------------------->
+  <div class="container rating-section pt-5">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="title">
+          How Review Ratings Affect <br>
+          Retail Business Success
+        </h1>
+      </div>
+      <div class="row pt-5">
+        <div class="col-lg-5 order-lg-3">
+          <img src="{{url_for('static',filename='assets/images/rating1.png')}}" alt="" class="w-100">
+        </div>
+        <div class="col-lg-7 order-lg-1">
+          <div class="row rating">
+            <div class="col-lg-6 col-md-12">
+              <img src="{{url_for('static',filename='assets/images/rating2.png')}}" alt="" class="w-50">
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <p class="text">92% consumers are more likely to look for products and services when they hear
+                recommendations from their own circle</p>
+            </div>
+          </div>
+          <div class="row rating">
+            <div class="col-lg-6 col-md-12">
+              <img src="{{url_for('static',filename='assets/images/rating3.png')}}" alt="" class="w-50">
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <p class="text">84% consumers put trust on reviews they read online as much as personal recommendations.
+              </p>
+            </div>
+          </div>
+          <div class="row rating">
+            <div class="col-lg-6 col-md-12">
+              <img src="{{url_for('static',filename='assets/images/rating4.png')}}" alt="" class="w-50">
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <p class="text">76% consumers are more likely to pay you a visit if they hear it from their peers rather
+                than an advertisement they see.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------Rating Section End---------------------->
+
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="{{url_for('static',filename='assets/kh-images/index2.jpg')}}" alt="" class="w-100">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-------------App Section ---------------------->
+  <div class="container app-section pt-5">
+    <h1 class="title">How Our Mobile App Works?</h1>
+    <div class="img-top">
+      <img src="{{url_for('static',filename='assets/kh-images/app1.png')}}" alt="" class="w-100">
+    </div>
+    <div class="img-bottom-border">
+    </div>
+    <div class="img-top mt-5">
+      <p class="text">
+        Users can create content and tag recommended products on YouAdMe App and
+        share it across their own social network.
+      </p>
+    </div>
+    <div class="">
+      <a href="#">
+        <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="15%">
+      </a>
+      <a href="#">
+        <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="15%">
+      </a>
+    </div>
+  </div>
+  <!-------------App Section End---------------------->
+
+
+  <!-------------Achievement  Section ---------------------->
+  <div class="container achivement-section mt-5">
+    <h1 class="title">Our Achievements</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <img src="{{url_for('static',filename='assets/images/achivement1.png')}}" alt="" class="w-100">
+        <p class="text">Asean Pitch Fest Winner, Cambodia</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <img src="{{url_for('static',filename='assets/images/achivement2.png')}}" alt="" class="w-100">
+        <p class="text">Asean Top 10 Innovation FinTech</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <img src="{{url_for('static',filename='assets/images/achivement3.jpg')}}" alt="" class="w-100">
+        <p class="text mt-4">2019 Cambodia Top 3 Startup</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <img src="{{url_for('static',filename='assets/images/achivement4.jpg')}}" alt="" class="w-100">
+        <p class="text">2019 Cambodia Best Fintech Startup</p>
+      </div>
+    </div>
+  </div>
+  <!-------------Achievement Section End---------------------->
+
+
+  <!-------------Retailer Section ---------------------->
+  <div class="container  mt-5 desktopview">
+    <div class="row product">
+
+      <div class="col-lg-6">
+        <h1 class="title">Try YouAdMe Now,
+          Support Your Local
+          Retailers!</h1>
+        <p class="text">Available Now</p>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+        </a>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <div class="retailers">
+          <img src="{{url_for('static',filename='assets/kh-images/index3.png')}}" alt="" class="w-50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container  mt-5 mobileview">
+    <div class="row product">
+      <div class="col-lg-12">
+
+        <h1 class="title">Try YouAdMe Now,
+          Support Your Local
+          Retailers!</h1>
+      </div>
+      <div class="col-lg-12">
+        <div class="retailers">
+          <img src="{{url_for('static',filename='assets/kh-images/index3.png')}}" alt="" class="w-50">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <p class="text">Available Now</p>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/playStore.png')}}" alt="" width="35%">
+        </a>
+        <a href="#">
+          <img src="{{url_for('static',filename='assets/images/appStore.png')}}" alt="" width="35%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-------------Retailer Section End---------------------->
+
+
+
+  <!-------------Footer---------------------->
+  {% include "./commonpages/footer.html" %}
+  <!-------------Footer End ---------------------->
+
+  <!--jquery js  -->
+  <script src="{{url_for('static',filename='assets/js/jquery-3.5.1.min.js')}}"></script>
+  <!-- bootstrap js -->
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/bootstrap.bundle.js')}}"></script>
+
+  <!-- main js -->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+</body>
+
+</html>
